@@ -1,0 +1,35 @@
+/* App.css */
+
+nav {
+  background-color: #333; /* Dark background for the NavBar */
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points from list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange list items horizontally */
+  gap: 1rem; /* Add spacing between links */
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text for links */
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: #00bcd4; /* Highlight link with light blue on hover */
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center-align the placeholder content */
+  color: #333; /* Dark gray for page headings */
+}

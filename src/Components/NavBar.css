@@ -1,0 +1,44 @@
+/* NavBar.css */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .nav-item .link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item .link:hover {
+    color: #00bcd4;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+  }
+  
