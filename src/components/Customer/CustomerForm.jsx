@@ -11,6 +11,7 @@ const CustomerForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [gstno, setGSTNO] = useState('');
   const [addresses, setAddresses] = useState([
     { addressType: '', line1: '', line2: '', city: '', state: '', country: '', pincode: '', isPrimary: false },
   ]);
@@ -51,7 +52,7 @@ const CustomerForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const customerData = { name, email, phone, addresses, category };
+    const customerData = { name, email, phone, gstno, addresses, category };
     console.log('Submitting Customer Data:', customerData);
 
     try {
@@ -65,6 +66,7 @@ const CustomerForm = () => {
       setName('');
       setEmail('');
       setPhone('');
+      setGSTNO('');
       setAddresses([
         { addressType: '', line1: '', line2: '', city: '', state: '', country: '', pincode: '', isPrimary: false },
       ]);
@@ -113,9 +115,19 @@ const CustomerForm = () => {
             required
           />
         </div>
+        
+        <div className="form-group">
+          <label>GSTNO:</label>
+          <input
+            type="text"
+            value={gstno}
+            onChange={(e) => setGSTNO(e.target.value)}
+            className="form-control"
+            required
+          />
+        </div>
 
         
-
         <h3>Addresses</h3>
         {addresses.map((address, index) => (
           <div key={index}>
